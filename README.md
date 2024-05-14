@@ -1,4 +1,4 @@
 # desenvolve-introducao-web
-- Projeto Desenvolve  - Itabira
+- Projeto Desenvolv - Itabira
 - Introdução a Programação Básica Web
 - 
