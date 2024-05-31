@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<!--Prática. Você deverá implementar um formulário de pesquisa de satisfação. Esse formulário é dividido em duas partes.
+
+a. Dados pessoais, onde o cliente deverá fornecer seu nome, e-mail, e telefone para contato.
+
+b. Pesquisa, onde o cliente deverá responder a três perguntas. 
+Duas delas utilizarão radio buttons como campo de resposta, e uma utilizará menu de dropdown. 
+Antes do botão de envio, inclua um checkbox indicando se o cliente autoriza compartilhar sua resposta com terceiros.
+
+Faça commit da sua página com o nome formulario.html no seu repositório do GitHub. Envie nessa atividade o link direto para o seu arquivo no GitHub.
+*
+-->
+
+<head>
+    <title>FORMULÁRIO</title>
+</head>
+
+<body>
+    <h1><u>|Pesquisa de Satisfação|</u></h1>
+    <form action="pagina_de_destino.html" method="post">
+        <!--PARTE 1-->
+        <section>
+            <h2>Dados Pessoais</h2>
+            <p>
+                <label for="nome"> Nome: </label>
+                <input type="text" placeholder="Digite seu nome completo" id="nome">
+            </p>
+            <p>
+                <label for="e-mail"> E-mail: </label>
+                <input type="email" placeholder="Digite seu e-mail" id="e-mail">
+            </p>
+            <p>
+                <label for="tel"> Tel.: </label>
+                <input type="tel" placeholder="Digite seu telefone" id="tel">
+
+        </section>
+        <!--PARTE 2-->
+        <section>
+            <h2>Responda a pesquisa abaixo: </h2>
+
+            <h3>Qual sua opinião sobre o atendimento?</h3>
+            <p>
+                <input type="radio" id="excelente" name="atendimento" checked/>
+                <label for="excelente">Excelente</label>
+            </p>
+            <p>
+                <input type="radio" id="boa" name="atendimento" />
+                <label for="boa">Boa</label>
+            </p>
+            <p>
+                <input type="radio" id="normal" name="atendimento" />
+                <label for="normal">Razoável</label>
+            </p>
+            <p>
+                <input type="radio" id="ruim" name="atendimento" />
+                <label for="ruim">Ruim</label>
+            </p>
+
+            <h3>Qual sua opinião sobre os preços?</h3>
+            <p>
+                <input type="radio" id="exurbitante" name="precos" checked />
+                <label for="exurbitante">Muito caro</label>
+            </p>
+            <p>
+                <input type="radio" id="caro" name="precos" />
+                <label for="caro">Caro</label>
+            </p>
+            <p>
+                <input type="radio" id="razoavel" name="precos" />
+                <label for="razoavel">Razoável</label>
+            </p>
+            <p>
+                <input type="radio" id="barato" name="precos" />
+                <label for="barato">Barato</label>
+            </p>
+            <p>
+                <label for="Estado">Qual Estado você reside?</label>
+                <select id="Estado">
+                        <option>Acre</option>
+                        <option>Alagoas</option>
+                        <option>Amapá</option>
+                        <option>Amazonas</option>
+                        <option>Bahia</option>
+                        <option>Ceará</option>
+                        <option>Distrito Federal</option>
+                        <option>Espírito Santo</option>
+                        <option>Goiás</option>
+                        <option>Maranhão</option>
+                        <option>Mato Grosso</option>
+                        <option>Mato Grosso do Sul</option>
+                        <option selected>Minas Gerais</option>
+                        <option>Pará</option>
+                        <option>Paraíba</option>
+                        <option>Paraná</option>
+                        <option>Pernambuco</option>
+                        <option>Piauí</option>
+                        <option>Rio de Janeiro</option>
+                        <option>Rio Grande do Norte</option>
+                        <option>Rio Grande do Sul</option>
+                        <option>Rondônia</option>
+                        <option>Roraima</option>
+                        <option>Santa Catarina</option>
+                        <option>São Paulo</option>
+                        <option>Sergipe</option>
+                        <option>Tocantins</option>
+                    </select>
+            </p>
+            <p>
+                <input type="checkbox" id="termos" />
+                <label for="termos"> Concordo em compartilhar essas respostas com terceiros </label>
+            </p>
+
+
+        </section>
+        <input type="submit" value="Enviar" />
+    </form>
+
+</body>
+
+</html>
